@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;1,200&family=Nunito+Sans:ital,wght@0,200;0,300;0,400;1,200;1,300;1,400&family=Quicksand:wght@300;400;500;600&family=Roboto:ital,wght@0,400;0,700;1,300;1,400&family=Source+Sans+Pro:wght@300;400;600;700;900&display=swap" rel="stylesheet"> 
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+
+    <title>Email Template Document</title>
+    <style>
+        body{
+            margin: 0;
+            background-color:gray;
+            font-family: 'Montserrat', sans-serif;
+        }
+        table{
+            border-spacing: 0;
+        }
+        td{
+            padding: 0;
+        }
+        img{
+            border: 0;
+        }
+        .innner_menu{
+        	margin: 0 auto;
+        	
+
+        }
+
+        .innner_menu ul{
+        	list-style: none;
+        	text-align: right;
+
+
+
+        }
+        .innner_menu ul li{
+        	display: inline-block;
+        	
+        	padding-left: -30px;
+        	
+
+        }
+        .innner_menu ul li:nth-child(odd){
+        	float: left;
+
+        }
+        .innner_menu ul li a{
+        	text-decoration: none;
+        	color: black;
+        	font-size: 17px;
+        	text-transform: uppercase;
+        	padding: 10px 15px;
+        	position: relative;
+            top: -25px;
+
+
+        	
+
+
+        }
+        .logo img{
+        	width: 50px;
+        	display: flex;
+        	justify-content: center;
+        	align-items: center;
+        	position: relative;
+        	top: 28px;
+        	left: -5px;
+        	
+        }
+        .weapper{
+            width: 100%;
+            table-layout: fixed;
+          
+            padding-bottom: 60px;
+        }
+        .main{
+            background-color: white;
+            max-width: 700px;
+            border-spacing: 0;
+            
+            color: #171a1b;
+            
+        }
+
+        /*.hero{
+        	background-image: url('https://www.psd2html.com/example/markup/balance/img-01.png');
+            background-position: right;
+            background-size: cover;
+            background-repeat: no-repeat;
+
+        }*/
+        .mar{
+        	margin-right: 30px;
+        }
+        .back{
+        	background-color: #ecf4ff;
+        	padding-left: 40px;
+        	
+        	
+        }
+        .back .colum{
+        	width: 100%;
+            max-width: 250px;
+            display: inline-block;
+            vertical-align: top;
+          
+        }
+        .back1{
+        	padding-bottom: 60px;
+        }
+        
+        .back1 .colum{
+        	width: 100%;
+            max-width: 340px;
+            display: inline-block;
+            vertical-align: top;
+          
+        }
+        .headd{
+        	color:#373737;
+        	font-weight: 700;
+        	font-size: 40px;
+        	padding-top: 20px;
+
+        }
+        .text_para{
+        	font-size: 18px;
+        	font-weight: 300;
+        	color:#373737;
+        	line-height: 25px;
+        	margin-top: -14px;
+        }
+        .headd2{
+        	color:#373737;
+        	font-weight: 700;
+        	font-size: 33px;
+        	padding-top: 20px;
+        	margin-left: 10px;
+        	
+
+        }
+        .text_para2{
+        	font-size: 18px;
+        	font-weight: 300;
+        	color:#373737;
+        	line-height: 25px;
+        	margin-top: -14px;
+        	margin-left: 10px;
+        }
+        .imggirl{
+        	padding-top: 20px;
+        	width: 334px;
+            height: 400px;
+            margin-bottom: -5px;
+        	
+        }
+        .imggir2{
+        	padding-top: 100px;
+        	width: 300px;
+            height: 380px;
+            margin-bottom: -5px;
+            margin-left: 30px;
+
+        	
+        }
+        .padd2{
+        	padding-top: 60px;
+        }
+        .button1{
+        	background-color: transparent;
+        	border:2px solid #92b0dd;
+        	color: #92b0dd;
+        	padding: 14px 70px;
+        	border-radius: 30px;
+        	font-size: 18px;
+
+        }
+        .button2{
+        	background-color: transparent;
+        	border:2px solid #92b0dd;
+        	color: #92b0dd;
+        	padding: 14px 70px;
+        	border-radius: 30px;
+        	font-size: 18px;
+        	margin-left: 10px;
+
+        }
+        .button1:hover{
+        	background-color: green;
+        	border:none;
+        	color: white;
+        	cursor: pointer;
+        }
+        .data{
+        	text-align: center;
+        	
+
+
+        }
+        .three_colum{
+        	margin-top: 40px;
+        }
+        .cont{
+        	background-color: #ecf4ff;
+        	padding: 15px 49px;
+        	border-radius: 5px;
+        	margin:2px;
+        }
+       .data .three_colum{
+        	width: 100%;
+            max-width: 217px;
+            display: inline-block;
+            vertical-align: top;        
+        }
+        
+        .buttonM{
+        	background-color: transparent;
+        	border:2px solid #92b0dd;
+        	color: #92b0dd;
+        	padding: 13px 35px;
+        	border-radius: 30px;
+        	font-size: 18px;
+        	margin: 0 auto;
+            display: block;
+        }
+        .img-col{
+        	text-align: center;
+        }
+        .img-col .img_colum{
+        	display: inline-table;
+        	width: 100%;
+        	max-width: 217px;
+        	vertical-align: top;
+        }
+        .img_colum{
+        	margin-top: 21px;
+        }
+        .buttonOrder{
+        	background-color: transparent;
+        	border:2px solid #92b0dd;
+        	color: #92b0dd;
+        	padding: 15px 60px;
+        	border-radius: 30px;
+        	font-size: 18px;
+        	
+        }
+        .product{
+
+
+        }
+        .Products_images{
+        	display: inline-block;
+        	width: 100%;
+        	max-width: 304px;
+        	vertical-align: top;
+        	margin-left: 30px;
+        }
+
+        .portfolio_image{
+        	width: 100%;
+        	max-width: 300px;
+        	display: inline-block;
+        	margin-left: 29px;
+        	margin-top: 30px;
+        	}
+
+        .buttonView{
+
+        	background-color: transparent;
+        	border:2px solid #92b0dd;
+        	color: #92b0dd;
+        	padding: 15px 60px;
+        	border-radius: 30px;
+        	font-size: 18px;
+        	margin:0 auto;
+        	display: block;
+        	margin-top: 30px;
+        	margin-bottom: 20px;
+        	}
+
+        	.about_img{
+        	width: 100%;
+        	max-width: 340px;
+        	display: inline-block;
+        	vertical-align: top;
+
+        	
+        	}
+
+        .icons {
+             display: ruby-base-container;
+             list-style: none;
+
+
+         }
+
+         i {
+           margin-right: 0.5em;
+          }
+
+         .fa-youtube{
+         	color: white;
+         	font-size: 30px;
+
+         }
+         .fa-linkedin{
+         	color: white;
+         	font-size: 30px;
+
+         }
+         .fa-whatsapp{
+         	color: white;
+         	font-size: 30px;
+
+         }
+         .fa-facebook-messenger{
+         	color: white;
+         	font-size: 30px;
+
+         }
+         .fa-facebook{
+         	color: white;
+         	font-size: 30px;
+
+         }
+
+
+
+
+
+
+         @media (max-width: 686px){
+         	.back{
+         		text-align: center;
+         		padding-left: 0px;
+         	}
+         	.headd{
+         		font-size: 25px;
+         	}
+         	.button1 {
+				background-color: transparent;
+				border: 2px solid #92b0dd;
+				color: #92b0dd;
+				padding: 10px 24px;
+				border-radius: 30px;
+				font-size: 18px;
+}
+         	.back1{
+         		text-align: center;
+         	}
+         	.product{
+         		text-align: center;
+         	}
+         	.port{
+         		text-align: center;
+
+         	}
+         	.portfolio_image{
+         		margin-left: 0px;
+         	}
+         	.Products_images{
+         		margin-left: 0px;
+         	}
+         	.imggir2{
+         		margin-left: 36px;
+         		max-width: 100%;
+         		width: 250px;
+         	}
+         	.imggirl{
+         		width: 100%;
+         	}
+
+         	
+         }
+
+         @media (max-width: 525px){
+            .innner_menu ul li:nth-child(odd){
+        	 
+        	 float: left;
+        	 position: relative;
+        	 left: -35px;
+        	 
+
+        }
+        .innner_menu ul li a{
+        	text-decoration: none;
+        	color: black;
+        	font-size: 13px;
+        	text-transform: uppercase;
+        	padding: 10px 15px;
+        	position: relative;
+            top: -22px;
+            left: 20px;
+        }
+        .innner_menu ul li{
+        	display: inline-block;
+        	
+        	padding-left: -30px;
+        	
+
+        }
+        .logo img{
+        	width: 50px;
+         	
+        }  
+        }
+        @media (max-width: 390px){
+        	.innner_menu ul li a{
+        		padding: 10px 7px;
+        		font-size: 11px;
+        	}
+        }
+
+
+    </style>
+</head>
+<body>
+       <center class="weapper">
+       	<div class="main">
+      <div id="main-menu">
+      	<div class="logo">
+      		<img src="https://cdn.pixabay.com/photo/2016/09/17/07/03/instagram-1675670__340.png" width="326" alt="pic">
+      	</div>
+      	<div class="innner_menu">
+      		<ul>
+      			<li class="mar1"><a href="#">Home</a></li>
+      			<li class=""><a href="#">About</a></li>
+      			<li><a href="#">Price</a></li>
+      			<li class="mar"><a href="#">Contact</a></li>
+
+      		</ul>
+      	</div>
+      </div>
+
+       <!-- hero section -->
+
+        <table width="100%">
+        	<tr>
+        		<td class="back">
+        			<table class="colum">
+        				<tr>
+        					<td class="padd">
+        						<h1 class="headd">Every woman deserves it</h1>
+        						<p class="text_para">Make your beauty shine<br/> bright with our world-<br/>class Center<br/> of Cosmetology</p>
+        						<button class="button1">Learn More</button>
+        					</td>
+        				</tr>
+        			</table>
+
+        			<table class="colum">
+        				 <tr>
+        				 	<td>
+        				 		<img src="https://www.psd2html.com/example/markup/balance/img-01.png" class="imggirl" alt="pic">
+        				 	</td>
+        				 </tr>
+        			</table>
+        		</td>
+        	</tr>
+
+
+        	<!-- Next Section -->
+        	<tr>
+        		<td class="back1">
+        			
+
+        			<table class="colum">
+        				 <tr>
+        				 	<td>
+        				 		<img src="https://www.psd2html.com/example/markup/balance/img-02.png" class="imggir2" alt="pic">
+        				 	</td>
+        				 </tr>
+        			</table>
+
+        			<table class="colum">
+        				<tr>
+        					<td class="padd2">
+        						<h1 class="headd2">About Our Center of Cosmetology </h1>
+        						<p class="text_para2">Located in the very heart of the city, our Center provides a wide range of beauty services, including skin care, waxing, makeup, hair styling, and massage. Our skilled and highly professional staff will not only make you look great but also feel great.</p>
+        						<button class="button2">Learn More</button>
+        					</td>
+        				</tr>
+        			</table>
+        		</td>
+        	</tr>
+
+    
+            <!--  Serives section -->
+
+            <tr>
+            	<td>
+            		<h4 style="color: #92b0dd; text-align: center; margin-top: 20%;">What we do</h4>
+            		<h1 style="color: black; font-weight: 700; text-align: center;line-height: 10px">Our Services</h1>
+            	</td>
+            </tr>
+
+            <tr>
+            	<td class="data">
+            		<table class="three_colum col1">
+            			<tr>
+            				<td>
+            					<div class="cont">
+            						<img src="https://www.psd2html.com/example/markup/balance/ico-01.png" style="padding-top: 24px;" width="73%" alt="pic">
+            						<h4 style="color: #92b0dd";>Dermatology </h4>
+            					</div>
+            				</td>
+            			</tr>
+            		</table>
+
+            		<table class="three_colum col2">
+            			<tr>
+            				<td>
+            					<div class="cont">
+            						<img src="https://www.psd2html.com/example/markup/balance/ico-02.png" width="69%" style="padding-top: 26px;" alt="pic">
+            						<h4 style="color: #92b0dd";>Cosmetology</h4>
+            					</div>
+            				</td>
+            			</tr>
+            		</table>
+
+            		<table class="three_colum col3">
+            			<tr>
+            				<td>
+            					<div class="cont">
+            						<img src="https://www.psd2html.com/example/markup/balance/ico-03.png" style="padding-top: 15px; " width="55%" class="imgv" alt="pic">
+            						<h4 style="color: #92b0dd; font-size: 16px;margin-top: 10px;">Body correction</h4>
+            					</div>
+            				</td>
+            			</tr>
+            		</table>
+            	</td>
+            </tr>
+
+
+            <!-- Next Section -->
+
+             <tr>
+            	<td>
+            		<h4 style="color: #92b0dd; text-align: center; margin-top: 8%;">Meet our beauty experts </h4>
+            		<h1 style="color: black; font-weight: 700; text-align: center;line-height: 10px">Our Team </h1>
+            	</td>
+            </tr>
+
+            <tr>
+            	<td class="img-col">
+            		<table class="img_colum" style="padding-bottom: 25px;">
+            			<tr>
+            				<td>
+            					<img src="https://www.psd2html.com/example/markup/balance/img-03.png" alt="pics" width="210">
+            					<h5 style="text-align: center;">Dermatologist </h5>
+            					<h2 style="text-align: center; margin-top: -15px;">Elizabeth <br> Anderson</h2>
+            					<button class="buttonM">More</button>
+            				</td>
+            			</tr>
+            		</table>
+
+            		<table class="img_colum" style="padding-bottom: 25px;">
+            			<tr>
+            				<td>
+            					<img src="https://www.psd2html.com/example/markup/balance/img-04.png" alt="pics" width="210">
+            					<h5 style="text-align: center;">Makeup Expert </h5>
+            					<h2 style="text-align: center; margin-top: -15px;">Jessica <br/>Jackson </h2>
+            					<button class="buttonM">More</button>
+            				</td>
+            			</tr>
+            		</table>
+
+            		<table class="img_colum" style="padding-bottom: 25px;">
+            			<tr>
+            				<td>
+            					<img src="https://www.psd2html.com/example/markup/balance/img-05.png" alt="pics" width="210">
+            					<h5 style="text-align: center;">Hair Stylist </h5>
+            					<h2 style="text-align: center; margin-top: -15px;">Claudia <br/>Thomson</h2>
+            					<button class="buttonM">More</button>
+            				</td>
+            			</tr>
+            		</table>
+
+            	</td>
+            </tr>
+
+
+           <!--  Next Section of Products-->
+
+           <tr>
+            	<td>
+            		<h4 style="color: #92b0dd; text-align: center; margin-top: 8%;">Cosmetics shop</h4>
+            		<h1 style="color: black; font-weight: 700; text-align: center;line-height: 10px">Our Products</h1>
+            	</td>
+            </tr>
+
+            <tr>
+            	<td class="product">
+            		<table class="Products_images" style="margin-top: 20px; padding-bottom: 14px;">
+            			<tr>
+            				<td>
+            					<img src="https://www.psd2html.com/example/markup/balance/img-06.png" alt="pic" width="300">
+            					<h3 style="margin-left: 10px;">Oil-Free Liquid <br/> Makeup Removers</h3>
+            					<p style="margin-top: -5px; margin-left: 10px;">Use our liquid makeup removers to cleanse your skin without drying its complexion</p>
+            					<span style="color: #92b0dd;"><button class="buttonOrder" style="margin-left: 10px;">Order</button>&nbsp  &nbsp &nbsp &nbsp &nbsp $20.00 </span>
+            				</td>
+            			</tr>
+            		</table>
+
+            		<table class="Products_images" style="margin-top: 20px; padding-bottom: 14px;">
+            			<tr>
+            				<td>
+            					<img src="https://www.psd2html.com/example/markup/balance/img-07.png" alt="pic" width="300">
+            					<h3 style="margin-left: 10px;">Mineral Conditioner With<br/> Dead Sea Minerals </h3>
+            					<p style="margin-top: -5px; margin-left: 10px;"> 	Rehydrate and rejuvenate every strand of your hair with this mineral﻿-﻿rich product </p>
+            					<span style="color: #92b0dd"><button class="buttonOrder" style="margin-left: 10px;">Order</button>&nbsp &nbsp &nbsp &nbsp $20.00 </span>
+            				</td>
+            			</tr>
+            		</table>
+
+            	</td>
+            </tr>
+
+             <!-- Portfolio section -->
+             <tr>
+            	<td>
+            		<h4 style="color: #92b0dd; text-align: center; margin-top: 8%;">Picture galery </h4>
+            		<h1 style="color: black; font-weight: 700; text-align: center;line-height: 10px">Our Portfolio</h1>
+            	</td>
+            </tr>
+
+            <tr>
+            	<td class="port">
+            		<table class="portfolio_image">
+            			<tr>
+            				<td>
+            					<img src="https://www.psd2html.com/example/markup/balance/img-08.png" alt="pic" width="310" height="335">
+            				</td>
+            			</tr>
+            		</table>
+
+            		<table class="portfolio_image">
+            			<tr>
+            				<td>
+            					<img src="https://www.psd2html.com/example/markup/balance/img-09.png" alt="pic" width="310" height="160">
+            					<table class="min-Imge" style="margin-top: 15px;">
+            						<tr>
+            							<td>
+            								<img src="https://www.psd2html.com/example/markup/balance/img-10.png"
+            					            alt="pic" width="144" height="155" >
+            					           <img src="https://www.psd2html.com/example/markup/balance/img-11.png"
+            				            	alt="pic" width="144" height="155" style="margin-left: 16px; max-width: 100%;">
+            							</td>
+            						</tr>
+            					</table>
+            					
+            				</td>
+            			</tr>
+            		</table>
+
+                       <button class="buttonView">View More</button>
+            	</td>
+            </tr>
+
+
+            <!-- Next Section -->
+
+            <tr>
+            	<td>
+            		<h1 style="color: black; font-weight: 700; text-align: center;line-height: 10px">About Us</h1>
+            	</td>
+            </tr>
+
+            <tr>
+        		<td class="back1">
+        			
+
+        			<table class="colum">
+        				 <tr>
+        				 	<td>
+        				 		<img src="https://cdn.pixabay.com/photo/2017/09/06/20/35/woman-2722936__340.jpg" style="margin-bottom: 0px;" class="imggir2" alt="pic">
+        				 	</td>
+        				 </tr>
+        			</table>
+
+        			<table class="colum">
+        				<tr>
+        					<td class="padd2">
+        						<h1 class="headd2">About Our Center of Cosmetology </h1>
+        						<p class="text_para2">Located in the very heart of the city, our Center provides a wide range of beauty services, including skin care, waxing, makeup, hair styling, and massage. Our skilled and highly professional staff will not only make you look great but also feel great.</p>
+        						<button class="button2">Learn More</button>
+        					</td>
+        				</tr>
+        			</table>
+        		</td>
+        	</tr>
+
+        	<!-- Next section footer -->
+
+        	<tr>
+             <td style="background-color: #565656; color: white;">
+                 <table width="100%">
+                     <tr>
+                         <td style="text-align: center; padding: 45px 20px;">
+                            <a href="https://ibb.co/NTRFYmG"><img src="https://i.ibb.co/KKn5yL8/icon-g0ec4ddc53-1280.png" alt="icon-g0ec4ddc53-1280" width="140"></a>
+                             <p style="padding: 10px;">Insight HTML Emial</p>
+                             <p style="padding: 10px;">123 Street Road,City Lahore</p>
+                             <ul class="icons">
+                             	<li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                             	<li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                             	<li><a href="#"><i class="fab fa-whatsapp"></i></a></li>
+                             	<li><a href="#"><i class="fab fa-facebook-messenger"></i></i></a></li>
+                             	<li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                             </ul>
+                             <p style="padding: 10px;">SUBSCRIBE</p>
+                        </td>
+                     </tr>
+                 </table>
+             </td>
+         </tr>
+
+        </table>
+  </div>
+  </center>
+
+</body>
+</html>
